@@ -1,11 +1,9 @@
 name: CI workflow
 on:
-  push:
-    branches: [main]
-  pull_request:
+  workflow_dispatch:
 jobs:
   tests:
-    run-on: ubuntu-latest # Ejecución en ubuntu
+    runs-on: ubuntu-latest # Ejecución en ubuntu
     steps:
       - name: Show name
         run: echo "Jaime Diego Brito Sánchez" # Mostrar nombre usando bash
