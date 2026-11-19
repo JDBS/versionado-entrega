@@ -1,0 +1,11 @@
+name: CI workflow
+on: 
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+jobs:
+  tests:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Show name
+        run: echo "Jaime Diego Brito Sánchez"
